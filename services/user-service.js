@@ -16,6 +16,7 @@ class UserService{
             headers: {"Content-type": "application/json;charset=UTF-8"}
         }
 
-        return fetch(this.baseUrl, requestInfo).then(response => response.json())
+        return fetch(this.baseUrl, requestInfo)
+        // .then(response => response.json())
     }
 }
